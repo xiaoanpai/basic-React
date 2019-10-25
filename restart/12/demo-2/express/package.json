@@ -1,0 +1,29 @@
+{
+    "name": "express",
+    "version": "1.0.0",
+    "description": "express demo",
+    "main": "index.js",
+    "author": "dkal",
+    "license": "MIT",
+    "dependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-loader": "7",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "babel-preset-stage-0": "^6.24.1",
+        "express": "^4.17.1",
+        "ignore-styles": "^5.0.1",
+        "react": "^16.10.2",
+        "react-dom": "^16.10.2",
+        "react-router-dom": "^5.1.2",
+        "redux": "^4.0.4"
+    },
+    "scripts": {
+        "prestart": "./node_modules/.bin/webpack --progress",
+        "start": "./node_modules/.bin/babel-node ./src/menu-server.js"
+    },
+    "devDependencies": {
+        "webpack": "^4.41.1",
+        "webpack-cli": "^3.3.9"
+    }
+}

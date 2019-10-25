@@ -1,0 +1,12 @@
+componentWillReciveProps(nextProps)
+仅当新的属性被传递给了组件后才会调用。这也是唯一可以调用setState方法的地方。
+
+shouldComponentUpdate(nextProps,nextState)
+更新生命周期的门卫，一个可以取消更新操作的谓词。该方法可以通过只允许执行必须的更新来改进性能。
+
+componentWillUpdate(nextProps,nextState)
+只在组件更新之前触发。和componentWillMount类似，只是它会在每次更新操作之前被触发。
+
+componentDidUpdate(prevProps, prevState)
+只在更新操作发生后，调用render方法之后触发。类似componentDidMount方法，不过它会在每次更新之后触发。
+

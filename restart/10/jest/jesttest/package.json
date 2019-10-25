@@ -1,0 +1,54 @@
+{
+  "name": "jesttest",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-scripts": "3.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest --colors --coverage",
+    "eject": "react-scripts eject"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__jest__/__mocks__/fileMock.js",
+      "\\.(css|scss)$": "identity-obj-proxy",
+      "^cpn(.*)$": "<rootDir>/src/components$1",
+      "\\.(scss)$": "<rootDir>/node_modules/jest-css-modules"
+    }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-jest": "^24.9.0",
+    "deep-freeze": "0.0.1",
+    "enzyme": "^3.10.0",
+    "jest": "^24.9.0",
+    "jest-css-modules": "^2.1.0",
+    "react-addons-test-utils": "^15.6.2"
+  }
+}

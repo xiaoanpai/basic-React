@@ -1,0 +1,52 @@
+[
+    {
+        "name": "A",
+        "ingredients": [
+            {
+                "name": "a",
+                "amount": 1,
+                "measurement": "1 la"
+            },
+            {
+                "name": "aa",
+                "amount": 2,
+                "measurement": "2 la"
+            },
+            {
+                "name": "aaa",
+                "amount": 3,
+                "measurement": "3 la"
+            }
+        ],
+        "steps": [
+            "asteps 1",
+            "asteps 2",
+            "asteps 3"
+        ]
+    },
+    {
+        "name": "B",
+        "ingredients": [
+            {
+                "name": "b",
+                "amount": 1,
+                "measurement": "1 lb"
+            },
+            {
+                "name": "bb",
+                "amount": 2,
+                "measurement": "2 lb"
+            },
+            {
+                "name": "bbb",
+                "amount": 3,
+                "measurement": "3 lb"
+            }
+        ],
+        "steps": [
+            "bsteps 1",
+            "bsteps 2",
+            "bsteps 3"
+        ]
+    }
+]

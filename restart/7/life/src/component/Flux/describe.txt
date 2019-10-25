@@ -1,0 +1,12 @@
+在Flux中，应用程序的State数据时存放在React组件外部的Store进行管理的。
+Store保留或者修改数据，是唯一可以更新Flux视图的办法。
+如果某个用户准备和Web页面交互(单击一个按钮或者提交一个表单)，然后有个Action会被创建用于表示用户的请求。
+
+一个Action会提供一组操作指令和需要变更的目标数据。
+
+Action是使用名为Dispatcher的中央控制组件分发的。
+Dispatcher的主要用途是将我们的Action排队，然后将它们分发到相应的Store中。
+
+一旦Store接收到一个Action,会使用它作为操作指令修改State和更新View.
+数据流是单向的:  Action到Dispatcher,然后是Store,最后到达View.
+

@@ -1,0 +1,6 @@
+数组    React.PropTypes.array
+布尔值  React.PropTypes.bool
+函数    React.PropTypes.func
+数字    React.PropTypes.number
+对象    React.PropTypes.object
+字符串  React.PropTypes.string

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<!-- <script src="./test.js"></script> -->
+
+<script>
+    const request = new XMLHttpRequest()
+    request.open('GET', 'https://api.randomuser.me/?nat=US&results=10')
+    request.onload = () => console.warn(request.response)
+    request.send()
+</script>
+
+</html>

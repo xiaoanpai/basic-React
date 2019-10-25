@@ -1,0 +1,12 @@
+constructor(props)
+componentWillMount()
+render()
+componentDidMount()
+componentWillUnmount()
+
+在组件被渲染完毕之前调用setState方法将不会启动更新生命周期。
+在组件渲染完毕之后调用setState方法就会启动更新生命周期。
+
+
+如果用户在componentWillMount方法中定义的回调函数调用了setState方法，那么它将会
+在组件被渲染完毕之后被触发，并且会启动更新生命周期。
